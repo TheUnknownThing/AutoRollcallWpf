@@ -10,13 +10,13 @@
         Title="Update" Height="450" Width="300" ResizeMode="NoResize">
     <Grid>
         <Label Content="当前软件版本" HorizontalAlignment="Left" Height="31" Margin="15,15,0,0" VerticalAlignment="Top" Width="111" FontSize="18"/>
-        <Label x:Name="NowVersion" Content="V9.5.0 Public Release 2" HorizontalAlignment="Left" Height="21" Margin="126,19,0,0" VerticalAlignment="Top" Width="157"/>
+        <Label x:Name="NowVersion" Content="V9.6.1 Public Release 4" HorizontalAlignment="Left" Height="21" Margin="126,19,0,0" VerticalAlignment="Top" Width="157"/>
         <Label Content="最新软件版本" HorizontalAlignment="Left" Height="27" Margin="15,45,0,0" VerticalAlignment="Top" Width="111" FontSize="18"/>
         <Label x:Name="LatestVersion" Content="" HorizontalAlignment="Left" Height="21" Margin="126,46,0,0" VerticalAlignment="Top" Width="157"/>
         <Label Content="当前版本更新日志" HorizontalAlignment="Left" Height="31" Margin="10,160,0,0" VerticalAlignment="Top" Width="148" FontSize="18"/>
         <TextBlock x:Name="UpdateFunction" HorizontalAlignment="Left" Height="203" Margin="10,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" FontSize="11"/>
-        <Label x:Name="isUpdated" Content="已是最新版本" HorizontalAlignment="Left" Height="27" Margin="44,115,0,0" VerticalAlignment="Top" Width="114" FontSize="18"/>
-        <Image x:Name="UpdatedImage" HorizontalAlignment="Left" Height="56" Margin="179,102,0,0" VerticalAlignment="Top" Width="56" Source="Icons/Updated.png"/>
+        <Label x:Name="isUpdated" Content="已是最新版本" HorizontalAlignment="Left" Height="27" Margin="44,97,0,0" VerticalAlignment="Top" Width="114" FontSize="18"/>
+        <Image x:Name="UpdatedImage" HorizontalAlignment="Left" Height="56" Margin="179,84,0,0" VerticalAlignment="Top" Width="56" Source="Icons/Updated.png"/>
         <Image x:Name="HaveUpdateImage" HorizontalAlignment="Left" Height="56" Margin="179,102,0,0" VerticalAlignment="Top" Width="56" Source="Icons/HaveUpdate.png" Visibility="Hidden"/>
     </Grid>
 </Window>

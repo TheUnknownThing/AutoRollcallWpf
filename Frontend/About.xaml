@@ -16,7 +16,7 @@
         <GridSplitter HorizontalAlignment="Left" Height="3" Margin="10,148,0,0" VerticalAlignment="Top" Width="273"/>
         <Label Content="软件信息" HorizontalAlignment="Left" Height="34" Margin="10,20,0,0" VerticalAlignment="Top" Width="126" FontSize="18"/>
         <Label Content="软件版本" HorizontalAlignment="Left" Height="34" Margin="10,170,0,0" VerticalAlignment="Top" Width="126" FontSize="18"/>
-        <Label Content="V9.5.0 Public Release 2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="233" Margin="10,209,0,0"/>
+        <Label Content="V9.6.1 Public Release 4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="233" Margin="10,209,0,0"/>
         <GridSplitter HorizontalAlignment="Left" Height="3" Margin="10,235,0,0" VerticalAlignment="Top" Width="273"/>
         <Label Content="免责声明" HorizontalAlignment="Left" Height="34" Margin="10,254,0,0" VerticalAlignment="Top" Width="126" FontSize="18"/>
         <Label Content="若你使用本软件对你的学习，你的学校或" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="262" Margin="10,288,0,0"/>

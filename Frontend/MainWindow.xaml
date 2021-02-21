@@ -7,7 +7,7 @@
         xmlns:ui="http://schemas.modernwpf.com/2019"
         ui:WindowHelper.UseModernWindowStyle="True"
         mc:Ignorable="d"
-        Title="自动签到" Height="380.285" Width="566.755" ResizeMode="NoResize">
+        Title="自动签到" Height="380.285" Width="566.755" ResizeMode="NoResize" Icon="ProgramIcon.ico">
     <Grid>
         <ui:ToggleSwitch x:Name="isAutoRollcallEnabled" Header="自动签到状态"
               OffContent="关" OnContent="开"
