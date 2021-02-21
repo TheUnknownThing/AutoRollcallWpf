@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Frontend"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         ui:WindowHelper.UseModernWindowStyle="True"
-        mc:Ignorable="d"
+        mc:Ignorable="d" FontFamily="Segoe UI, Microsoft YaHei UI"
         Title="Update" Height="450" Width="300" ResizeMode="NoResize">
     <Grid>
         <Label Content="当前软件版本" HorizontalAlignment="Left" Height="31" Margin="15,15,0,0" VerticalAlignment="Top" Width="111" FontSize="18"/>
