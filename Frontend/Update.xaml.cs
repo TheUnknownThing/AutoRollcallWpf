@@ -40,7 +40,7 @@ namespace Frontend
                 timer.Stop();
                 LatestVersion.Content = GetHtmlStr("https://gitee.com/theunknownthing/auto-rollcall-wpfnotice/raw/master/version.txt", "UTF8");
                 UpdateFunction.Text = GetHtmlStr("https://gitee.com/theunknownthing/auto-rollcall-wpfnotice/raw/master/Logs", "UTF8");
-                if (NowVersion.Content == LatestVersion.Content) {
+                if (NowVersion.Content.ToString() == LatestVersion.Content.ToString()) {
                     isUpdated.Content = "已是最新版本";
                     UpdatedImage.Visibility = System.Windows.Visibility.Visible;
                     HaveUpdateImage.Visibility = System.Windows.Visibility.Hidden;

@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Frontend"
+        xmlns:local="clr-namespace:Frontend" FontFamily="Segoe UI, Microsoft YaHei UI"
         ui:WindowHelper.UseModernWindowStyle="True"
         mc:Ignorable="d"
         Title="关于软件" Height="400" Width="300" ResizeMode="NoResize">

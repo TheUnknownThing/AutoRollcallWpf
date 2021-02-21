@@ -89,3 +89,5 @@ G:\AutoRollcallWPF上一个成功的版本\AutoRollcallWPF\Frontend\obj\Debug\Fr
 G:\AutoRollcallWPF上一个成功的版本\AutoRollcallWPF\Frontend\obj\Debug\Frontend.pdb
 G:\AutoRollcallWPF上一个成功的版本\AutoRollcallWPF\Frontend\obj\Debug\Frontend_Content.g.cs
 G:\AutoRollcallWPF上一个成功的版本\AutoRollcallWPF\Frontend\bin\Debug\rollcall.wav
+G:\AutoRollcallWPF上一个成功的版本\AutoRollcallWPF\Frontend\obj\Debug\Thanks.g.cs
+G:\AutoRollcallWPF上一个成功的版本\AutoRollcallWPF\Frontend\obj\Debug\Thanks.baml

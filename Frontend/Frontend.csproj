@@ -73,6 +73,9 @@
     </ApplicationDefinition>
     <Compile Include="RollcallCheck-new.cs" />
     <Compile Include="RollcallCheck.cs" />
+    <Compile Include="Thanks.xaml.cs">
+      <DependentUpon>Thanks.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Update.xaml.cs">
       <DependentUpon>Update.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="OpenSource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Thanks.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

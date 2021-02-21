@@ -19,6 +19,7 @@ using System.Diagnostics;
 using System.Net;
 using System.IO;
 using System.Runtime.InteropServices;
+using System.Collections.ObjectModel;
 
 namespace Frontend
 {
@@ -36,15 +37,25 @@ namespace Frontend
         const int MOUSEEVENTF_LEFTDOWN = 0x0002;
         const int MOUSEEVENTF_LEFTUP = 0x0004;
         const int MOUSEEVENTF_ABSOLUTE = 0x8000;
+        public class RollcallInformation
+        {
+            public string time { get; set; }
+            public int num { get; set; }
+        }
         DispatcherTimer timer = new DispatcherTimer();
-        int checknum = 0;
+        public static int checknum { get; set; }
+        public static int isChecking { get; set; }
+        public static ObservableCollection<RollcallInformation> rollcall = new ObservableCollection<RollcallInformation>();
         public MainWindow()
         {
             InitializeComponent();
+            isChecking = 0;
+            checknum = 0;
             Notice.Text = GetHtmlStr("https://gitee.com/theunknownthing/auto-rollcall-wpfnotice/raw/master/notice.txt", "UTF8");
         }
         public static void autoinput(IntPtr hwnd, int width, int height, int x, int y)
         {
+            isChecking = 1;
             int startpointx = x + width / 7;
             int startpointy = (int)(y + (0.73 * height));
             /*
@@ -63,16 +74,23 @@ namespace Frontend
             int movedistance = (width * 12) / 10;
             for (int i = 1; i <= movedistance; i++)
             {
+                
                 mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
                 mouse_event(MOUSEEVENTF_MOVE, 1, 0, 0, 0);
-                if (i == movedistance)
-                {
-                    mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
-                }
+
                 Thread.Sleep(1);
             }
-
+            mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
             startmusic();
+            checknum++;
+            //RollcallNum.Content = checknum;
+            rollcall.Add(new RollcallInformation()
+            {
+                num = checknum,
+                time = DateTime.Now.ToString("HH:mm:ss")
+            });
+            //RollcallInformations.ItemsSource = rollcall;
+            isChecking = 0;
             // For Test Use
             /*
             mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE, 1000, 1000, 0, 0);
@@ -124,21 +142,22 @@ namespace Frontend
 
             Thread thread = new Thread(rollcall_check);
             thread.Start();
-            checknum++;
 
         }
 
         private void rollcall_check()
         {
-            RollcallCheck.init();
-
-            RollcallCheck.WindowInfo rollcallwindowinfo = new RollcallCheck.WindowInfo();
-
-            rollcallwindowinfo= RollcallCheck.detectwindow();
-            if (rollcallwindowinfo.hWnd != (IntPtr)0)
+            if (isChecking == 0)
             {
-                autoinput(rollcallwindowinfo.hWnd, rollcallwindowinfo.width, rollcallwindowinfo.height, rollcallwindowinfo.Left, rollcallwindowinfo.Top);
+                RollcallCheck.init();
+                RollcallCheck.WindowInfo rollcallwindowinfo = new RollcallCheck.WindowInfo();
+                rollcallwindowinfo = RollcallCheck.detectwindow();
+                if (rollcallwindowinfo.hWnd != (IntPtr)0)
+                {
+                    autoinput(rollcallwindowinfo.hWnd, rollcallwindowinfo.width, rollcallwindowinfo.height, rollcallwindowinfo.Left, rollcallwindowinfo.Top);
+                }
             }
+            
         }
         private void isSoundEnabled_Toggled(object sender, RoutedEventArgs e)
         {
@@ -190,6 +209,12 @@ namespace Frontend
             }
             catch { }
             return htmlStr;
+        }
+
+        private void OpenThanks_Click(object sender, RoutedEventArgs e)
+        {
+            Thanks k = new Thanks();
+            k.Show();
         }
     }
 }
