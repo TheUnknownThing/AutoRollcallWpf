@@ -4,7 +4,7 @@
 
 <h1>AutoRollcallWPF</h1>
 
-A ADB-Based Toolbox. Designed by Hanning-Wang.
+An Amazing Auto Rollcall App.
 
 It is free and easy to use. Source code is uploaded to Github.
 
