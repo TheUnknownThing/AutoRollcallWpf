@@ -1,0 +1,27 @@
+﻿<Window x:Class="Frontend.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Frontend"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        mc:Ignorable="d"
+        Title="关于软件" Height="400" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="此软件是继@酷安凌莞，@الشيء " HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="233" Margin="10,59,0,0"/>
+        <Label Content="@Amano陽菜，@快乐小牛，@WXRIW" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="262" Margin="10,80,0,0"/>
+        <Label Content="后推出的使用C#编写针对新型'滑动签到'的" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="273" Margin="10,101,0,0"/>
+        <Label Content="签到辅助工具。" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="273" Margin="10,122,0,0"/>
+        <GridSplitter HorizontalAlignment="Left" Height="3" Margin="10,148,0,0" VerticalAlignment="Top" Width="273"/>
+        <Label Content="软件信息" HorizontalAlignment="Left" Height="34" Margin="10,20,0,0" VerticalAlignment="Top" Width="126" FontSize="18"/>
+        <Label Content="软件版本" HorizontalAlignment="Left" Height="34" Margin="10,170,0,0" VerticalAlignment="Top" Width="126" FontSize="18"/>
+        <Label Content="V9.5.0 Public Release 2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="233" Margin="10,209,0,0"/>
+        <GridSplitter HorizontalAlignment="Left" Height="3" Margin="10,235,0,0" VerticalAlignment="Top" Width="273"/>
+        <Label Content="免责声明" HorizontalAlignment="Left" Height="34" Margin="10,254,0,0" VerticalAlignment="Top" Width="126" FontSize="18"/>
+        <Label Content="若你使用本软件对你的学习，你的学校或" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="262" Margin="10,288,0,0"/>
+        <Label Content="你自己造成任何不良影响，本软件不付任" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="262" Margin="10,309,0,0"/>
+        <Label Content="何责任" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21" Width="262" Margin="10,330,0,0"/>
+
+    </Grid>
+</Window>
