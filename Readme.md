@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width='150' height='150' src=/Frontend/BigIcon.png>
+<img width='192' height='155' src=/Frontend/BigIcon.png>
 
 <h1>AutoRollcallWPF</h1>
 
@@ -21,4 +21,4 @@ https://www.microsoft.com/net/download/thank-you/net450-offline
 
 ----------------
 ## Contribute
-#### Just tell me or pull requests to our project if you want more
+#### Just tell me or pull requests to our project if you want more features.
