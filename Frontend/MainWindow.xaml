@@ -5,25 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Frontend"
         xmlns:ui="http://schemas.modernwpf.com/2019"
-        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:WindowHelper.UseModernWindowStyle="True" FontFamily="Segoe UI, Microsoft YaHei UI"
         mc:Ignorable="d"
         Title="自动签到" Height="398.586" Width="403.66" ResizeMode="NoResize">
     <Grid>
         <ui:ToggleSwitch x:Name="isAutoRollcallEnabled" Header="自动签到状态"
-              OffContent="关" OnContent="开"
+              OffContent="关" OnContent="开" FontFamily="Segoe UI, Microsoft YaHei UI"
               Toggled="isAutoRollcallEnabled_Toggled" IsOn="false" Margin="24,98,0,219.333" Height="52" Width="144"/>
         <ProgressBar IsIndeterminate="false" Margin="10,66,9.667,279.333" Height="24" x:Name="ShowAutoRollcallService" Visibility="hidden"/>
         <Label Content="欢迎使用自动签到" HorizontalAlignment="Left" Height="36" Margin="10,26,0,0" VerticalAlignment="Top" Width="194" FontSize="24" x:Name="WelcomeLabel"/>
         <ui:ToggleSwitch IsEnabled="False" IsOn="True" x:Name="isSoundEnabled" Header="是否打开签到声音提示"
-            OffContent="否" OnContent="暂时无法修改"
+            OffContent="否" OnContent="暂时无法修改" FontFamily="Segoe UI, Microsoft YaHei UI"
             Toggled="isSoundEnabled_Toggled" Margin="24,155,0,162.333" Height="52" Width="144"/>
         <Label Content="检测间隔" HorizontalAlignment="Left" Height="24" Margin="24,242,0,0" VerticalAlignment="Top" Width="61"/>
-        <TextBox x:Name="RollcalllCheckSeconds" HorizontalAlignment="Left" Height="9" Margin="90,235,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="40" MinWidth="40"/>
+        <TextBox x:Name="RollcalllCheckSeconds" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="9" Margin="87,235,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="40" MinWidth="40"/>
         <Label Content="秒" HorizontalAlignment="Left" Height="24" Margin="135,243,0,0" VerticalAlignment="Top" Width="19"/>
         <Label Content="提示：请输入6~10之间的整数" HorizontalAlignment="Left" Height="24" Margin="159,242,0,0" VerticalAlignment="Top" Width="199"/>
-        <Button x:Name="AboutShow" Content="关于软件" HorizontalAlignment="Left" Height="41" Margin="24,295,0,0" VerticalAlignment="Top" Width="106" Click="About_Click"/>
-        <Button x:Name="Update" Content="检测更新" HorizontalAlignment="Left" Height="41" Margin="145,295,0,0" VerticalAlignment="Top" Width="106" Click="Update_Click"/>
-        <Button x:Name="OpenSource" Content="开源信息" HorizontalAlignment="Left" Height="41" Margin="266,295,0,0" VerticalAlignment="Top" Width="106" Click="OpenSource_Click"/>
+        <Button x:Name="AboutShow" FontFamily="Segoe UI, Microsoft YaHei UI" Content="关于软件" HorizontalAlignment="Left" Height="41" Margin="24,295,0,0" VerticalAlignment="Top" Width="106" Click="About_Click"/>
+        <Button x:Name="Update" FontFamily="Segoe UI, Microsoft YaHei UI" Content="检测更新" HorizontalAlignment="Left" Height="41" Margin="145,295,0,0" VerticalAlignment="Top" Width="106" Click="Update_Click"/>
+        <Button x:Name="OpenSource" FontFamily="Segoe UI, Microsoft YaHei UI" Content="开源信息" HorizontalAlignment="Left" Height="41" Margin="266,295,0,0" VerticalAlignment="Top" Width="106" Click="OpenSource_Click"/>
         <Label Content="公告" HorizontalAlignment="Left" Height="25" Margin="192,88,0,0" VerticalAlignment="Top" Width="48" FontSize="18"/>
         <GridSplitter HorizontalAlignment="Left" Height="140" Margin="173,91,0,0" VerticalAlignment="Top" Width="5"/>
         <TextBlock x:Name="Notice" HorizontalAlignment="Left" Height="112" Margin="192,118,0,0" TextWrapping="Wrap" Text="公告内容" VerticalAlignment="Top" Width="166" FontSize="11"/>

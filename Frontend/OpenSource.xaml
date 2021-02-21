@@ -4,14 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Frontend"
-        xmlns:ui="http://schemas.modernwpf.com/2019"
+        xmlns:ui="http://schemas.modernwpf.com/2019" FontFamily="Segoe UI, Microsoft YaHei UI"
         ui:WindowHelper.UseModernWindowStyle="True"
         mc:Ignorable="d"
         Title="开源信息" Height="400" Width="300" ResizeMode="NoResize">
     <Grid>
         <Image Height="163" Margin="10,45,23.333,0" VerticalAlignment="Top" Width="Auto" Source="BigIcon.png"/>
         <Label Content="Check Out This Project!" HorizontalAlignment="Left" Height="29" Margin="21,242,0,0" VerticalAlignment="Top" Width="249" FontSize="22"/>
-        <Button Content="Github仓库" HorizontalAlignment="Left" Height="42" Margin="43,290,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click"/>
+        <Button Content="Github仓库" FontFamily="Segoe UI, Microsoft YaHei UI" HorizontalAlignment="Left" Height="42" Margin="43,290,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click"/>
         <Button Content="下载链接" HorizontalAlignment="Left" Height="42" Margin="164,290,0,0" VerticalAlignment="Top" Width="91" x:Name="Lanzou" Click="Lanzou_Click" IsEnabled="False"/>
 
     </Grid>
